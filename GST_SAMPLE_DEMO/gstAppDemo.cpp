@@ -125,7 +125,7 @@ int main()
   point p1(center_row-(BOX_WIDTH/2),center_col-(BOX_HEIGHT/2));
   Point p2(center_row+(BOX_WIDTH/2),center_col+(BOX_HEIGHT/2));
   rectangle(outframe,p1,p2,Scalar(0,255,0),3);
-  const char *text = " Blaize - Gstreamer Sample App";
+  const char *text = "Gstreamer Sample App";
   cv::putText (outframe, text, cv::Point(center_row-(BOX_WIDTH/2), center_col), cv::FONT_HERSHEY_COMPLEX_SMALL, 0.8, cv::Scalar(255, 0, 0), 1, LINE_AA);
   imshow("output",outframe);
   waitKey(10);
